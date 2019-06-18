@@ -1,7 +1,7 @@
 /* general */
 
 body {
-    background-image: url("floor-tile.png");
+    background-image: url("../images/floor-tile.png");
     margin: 0;
     padding: 0;
 }
@@ -10,15 +10,16 @@ h1, h2, h3 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-p, a {
+p, a, label {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
 .content-background {
     margin-top: 100px;
-    background: white;
+    background:#ffffff;
     padding: 50px;
-    border: 1px solid#e4e4e4;
+    border: 1px solid #dddddd;
 }
 
 .title {
@@ -47,6 +48,7 @@ p, a {
     font-size: 15px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin: 0;
+    z-index: 100;
 
 }
 
@@ -55,10 +57,10 @@ li:last-child {
 }
 
 .navbar {
+    width: 100%;
+    top: 0;
     background: #ffffff;
-    height: 100%;
-    border-bottom: 1px solid #8f8f8f;
-    margin-bottom: 0!important;
+    border-bottom: 1px solid#cccccc;
     padding: 0;
 }
 
@@ -69,6 +71,7 @@ li:last-child {
     font-size: 28px;
     padding: 20px;
     height: 100%;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -78,18 +81,12 @@ li:last-child {
 
 /* Index */
 
-#myimg {
-    height: 200px;
-    width: 200px;
-}
-
 .img-fluid {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-#index-content {
-}
 
 /* Contact */
 
@@ -132,8 +129,10 @@ footer {
     padding: 10px;
     width: 100%;
     border-top: 5px solid #4aaaaa;
-    background: #8f8f8f;
+    background: #666666;
     text-align: center;
     color: white;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
 }
-
