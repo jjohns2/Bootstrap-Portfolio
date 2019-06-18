@@ -1,8 +1,46 @@
+/* general */
+
 body {
     background-image: url("floor-tile.png");
     margin: 0;
     padding: 0;
 }
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+p, a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.content-background {
+    margin-top: 100px;
+    background: white;
+    padding: 50px;
+    border: 1px solid#e4e4e4;
+}
+
+.title {
+    width: 100%;
+    border-bottom: 1px solid#e4e4e4;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: #4aaaaa;
+    margin-bottom: 20px;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.col-md-4 {
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+
+/* navbar */
 
 .nav-item {
     border-right: 1px solid #cccccc;
@@ -24,8 +62,6 @@ li:last-child {
     padding: 0;
 }
 
-
-
 #myname {
     float: left;
     background: #4aaaaa;
@@ -35,39 +71,61 @@ li:last-child {
     height: 100%;
 }
 
-h2 {
-
-}
-
-.content-background {
-    margin-top: 100px;
-    background: white;
-    padding: 50px;
-    border: 1px solid;
-}
-
 .navbar-brand {
     padding: 0;
 }
 
-#myimage {
-    width: 100%;
-    max-height: 100%;
-    float: right;
+
+/* Index */
+
+#myimg {
+    height: 200px;
+    width: 200px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#index-content {
+}
+
+/* Contact */
+
+.btn-light{
+    background: #4aaaaa;
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+
+/* Portfolio */
+.portfolio-img {
     margin-bottom: 20px;
-}
-
-.title {
+    position: relative;
     width: 100%;
-    border-bottom: 1px solid #8f8f8f;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    color: #4aaaaa;
+    display: inline-block;
 }
 
-.top-buffer { 
-    margin-top: 50px; 
+h3 {
+    background: #4aaaaa;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+
 }
+
+.caption {
+    position: absolute;
+    top: 70%;
+    bottom: 30%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 97.5%;
+}
+
+/* Footer */
 
 footer {
     margin-top: 10px;
@@ -77,5 +135,5 @@ footer {
     background: #8f8f8f;
     text-align: center;
     color: white;
-
 }
+
